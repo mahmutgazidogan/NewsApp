@@ -8,11 +8,13 @@
 import UIKit
 
 class NewsViewController: UIViewController {
-
+    
+    let newsViewModel: NewsViewModelProtocol = NewsViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        newsViewModel.fetchNews()
+        
     }
     
 

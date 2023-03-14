@@ -34,10 +34,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Clu-mP-xVB">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Clu-mP-xVB">
                                 <rect key="frame" x="0.0" y="213" width="393" height="639"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="393" id="G2b-KP-tYM"/>
+                                    <constraint firstAttribute="height" constant="639" id="tEh-SX-ray"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="newsCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="newsCell" id="pfs-i4-2Uq">
                                         <rect key="frame" x="0.0" y="50" width="393" height="100"/>
@@ -54,8 +57,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="3wZ-jc-a2w" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="6c5-6E-1CU"/>
+                            <constraint firstItem="Clu-mP-xVB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Ap2-fS-RmH"/>
                             <constraint firstItem="3wZ-jc-a2w" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="DdM-Iq-wqT"/>
+                            <constraint firstItem="Clu-mP-xVB" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="IBb-gZ-3Ik"/>
                             <constraint firstItem="8d4-JI-Jr2" firstAttribute="top" secondItem="3wZ-jc-a2w" secondAttribute="bottom" constant="10" id="MSf-Jm-YcU"/>
+                            <constraint firstAttribute="bottom" secondItem="Clu-mP-xVB" secondAttribute="bottom" id="Soi-O2-WoI"/>
                             <constraint firstItem="3wZ-jc-a2w" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="hd4-lx-5dJ"/>
                             <constraint firstItem="8d4-JI-Jr2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="mqi-B9-wfC"/>
                             <constraint firstItem="8d4-JI-Jr2" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="v8i-qs-JYV"/>
