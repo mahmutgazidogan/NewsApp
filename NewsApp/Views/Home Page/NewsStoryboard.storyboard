@@ -17,33 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="3wZ-jc-a2w">
-                                <rect key="frame" x="0.0" y="103" width="393" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="BeV-Th-gAV"/>
-                                    <constraint firstAttribute="width" constant="393" id="gfG-gF-DQJ"/>
-                                </constraints>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="xy9-1m-h9j"/>
-                                </connections>
-                            </searchBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest news from US" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8d4-JI-Jr2">
-                                <rect key="frame" x="10" y="169" width="373" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="Tuf-u9-FOI"/>
-                                    <constraint firstAttribute="width" constant="373" id="vyw-U9-06G"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Clu-mP-xVB">
-                                <rect key="frame" x="0.0" y="213" width="393" height="639"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="393" id="G2b-KP-tYM"/>
-                                    <constraint firstAttribute="height" constant="639" id="tEh-SX-ray"/>
+                                    <constraint firstAttribute="height" constant="749" id="tEh-SX-ray"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="newsCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="newsCell" id="pfs-i4-2Uq" customClass="NewsTableViewCell" customModule="NewsApp" customModuleProvider="target">
@@ -106,26 +85,14 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3wZ-jc-a2w" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="6c5-6E-1CU"/>
                             <constraint firstItem="Clu-mP-xVB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Ap2-fS-RmH"/>
-                            <constraint firstItem="3wZ-jc-a2w" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="DdM-Iq-wqT"/>
-                            <constraint firstItem="3wZ-jc-a2w" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="FZZ-dN-AJq"/>
                             <constraint firstItem="Clu-mP-xVB" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="IBb-gZ-3Ik"/>
-                            <constraint firstItem="8d4-JI-Jr2" firstAttribute="top" secondItem="3wZ-jc-a2w" secondAttribute="bottom" constant="10" id="L2E-NA-t7K"/>
-                            <constraint firstItem="8d4-JI-Jr2" firstAttribute="top" secondItem="3wZ-jc-a2w" secondAttribute="bottom" constant="10" id="MSf-Jm-YcU"/>
                             <constraint firstAttribute="bottom" secondItem="Clu-mP-xVB" secondAttribute="bottom" id="Soi-O2-WoI"/>
-                            <constraint firstItem="3wZ-jc-a2w" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="hd4-lx-5dJ"/>
-                            <constraint firstItem="8d4-JI-Jr2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="mqi-B9-wfC"/>
-                            <constraint firstItem="3wZ-jc-a2w" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="rSD-E6-2w7"/>
-                            <constraint firstItem="8d4-JI-Jr2" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="v8i-qs-JYV"/>
-                            <constraint firstItem="3wZ-jc-a2w" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="xrZ-15-A6X"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4Ip-Qn-oEe"/>
                     <connections>
-                        <outlet property="newsLabel" destination="8d4-JI-Jr2" id="Syq-M3-7Oi"/>
                         <outlet property="newsTableView" destination="Clu-mP-xVB" id="c48-7C-8uz"/>
-                        <outlet property="searchBar" destination="3wZ-jc-a2w" id="BRa-54-KGo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -137,8 +104,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z7F-qq-8f9" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oHq-xB-fh4">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="oHq-xB-fh4">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

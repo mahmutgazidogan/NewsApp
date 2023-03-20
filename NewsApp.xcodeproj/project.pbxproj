@@ -13,7 +13,7 @@
 		C0723B6E29BFA8FF00AA37B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0723B6C29BFA8FF00AA37B3 /* Main.storyboard */; };
 		C0723B7029BFA90400AA37B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0723B6F29BFA90400AA37B3 /* Assets.xcassets */; };
 		C0723B7329BFA90400AA37B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0723B7129BFA90400AA37B3 /* LaunchScreen.storyboard */; };
-		C0723B8729BFAE7000AA37B3 /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0723B8629BFAE7000AA37B3 /* HomePage.storyboard */; };
+		C0723B8729BFAE7000AA37B3 /* NewsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0723B8629BFAE7000AA37B3 /* NewsStoryboard.storyboard */; };
 		C0723B8929BFB0B500AA37B3 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0723B8829BFB0B500AA37B3 /* NewsViewController.swift */; };
 		C0723B8B29BFB12300AA37B3 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0723B8A29BFB12300AA37B3 /* NewsModel.swift */; };
 		C0723B8E29BFB3EC00AA37B3 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0723B8D29BFB3EC00AA37B3 /* NewsService.swift */; };
@@ -21,6 +21,8 @@
 		C0723B9C29BFC93B00AA37B3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C0723B9B29BFC93B00AA37B3 /* Alamofire */; };
 		C0723B9E29C0B31900AA37B3 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0723B9D29C0B31900AA37B3 /* NewsTableViewCell.swift */; };
 		C0723BA129C0B55400AA37B3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C0723BA029C0B55400AA37B3 /* Kingfisher */; };
+		C0723BA329C10C8E00AA37B3 /* DetailsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0723BA229C10C8E00AA37B3 /* DetailsStoryboard.storyboard */; };
+		C0723BA529C10CAC00AA37B3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0723BA429C10CAC00AA37B3 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,12 +34,14 @@
 		C0723B6F29BFA90400AA37B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0723B7229BFA90400AA37B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0723B7429BFA90400AA37B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0723B8629BFAE7000AA37B3 /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
+		C0723B8629BFAE7000AA37B3 /* NewsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsStoryboard.storyboard; sourceTree = "<group>"; };
 		C0723B8829BFB0B500AA37B3 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		C0723B8A29BFB12300AA37B3 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		C0723B8D29BFB3EC00AA37B3 /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsService.swift; path = ../../../../../Documents/NewsService.swift; sourceTree = "<group>"; };
 		C0723B9229BFBEAB00AA37B3 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsViewModel.swift; path = ../../../../../../Documents/NewsViewModel.swift; sourceTree = "<group>"; };
 		C0723B9D29C0B31900AA37B3 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		C0723BA229C10C8E00AA37B3 /* DetailsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsStoryboard.storyboard; sourceTree = "<group>"; };
+		C0723BA429C10CAC00AA37B3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		C0723B8329BFADF400AA37B3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C0A1ED9629C8A85700DF6EC4 /* Cell */,
 				C0723B8429BFAE0B00AA37B3 /* Home Page */,
 				C0723B8529BFAE2100AA37B3 /* Detail Page */,
 			);
@@ -114,10 +119,9 @@
 		C0723B8429BFAE0B00AA37B3 /* Home Page */ = {
 			isa = PBXGroup;
 			children = (
-				C0723B8629BFAE7000AA37B3 /* HomePage.storyboard */,
+				C0723B8629BFAE7000AA37B3 /* NewsStoryboard.storyboard */,
 				C0723B8829BFB0B500AA37B3 /* NewsViewController.swift */,
 				C0723B9229BFBEAB00AA37B3 /* NewsViewModel.swift */,
-				C0723B9D29C0B31900AA37B3 /* NewsTableViewCell.swift */,
 			);
 			path = "Home Page";
 			sourceTree = "<group>";
@@ -125,6 +129,8 @@
 		C0723B8529BFAE2100AA37B3 /* Detail Page */ = {
 			isa = PBXGroup;
 			children = (
+				C0723BA229C10C8E00AA37B3 /* DetailsStoryboard.storyboard */,
+				C0723BA429C10CAC00AA37B3 /* DetailViewController.swift */,
 			);
 			path = "Detail Page";
 			sourceTree = "<group>";
@@ -135,6 +141,14 @@
 				C0723B8D29BFB3EC00AA37B3 /* NewsService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		C0A1ED9629C8A85700DF6EC4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C0723B9D29C0B31900AA37B3 /* NewsTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,9 +217,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0723B8729BFAE7000AA37B3 /* HomePage.storyboard in Resources */,
+				C0723B8729BFAE7000AA37B3 /* NewsStoryboard.storyboard in Resources */,
 				C0723B7329BFA90400AA37B3 /* LaunchScreen.storyboard in Resources */,
 				C0723B7029BFA90400AA37B3 /* Assets.xcassets in Resources */,
+				C0723BA329C10C8E00AA37B3 /* DetailsStoryboard.storyboard in Resources */,
 				C0723B6E29BFA8FF00AA37B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0723BA529C10CAC00AA37B3 /* DetailViewController.swift in Sources */,
 				C0723B8E29BFB3EC00AA37B3 /* NewsService.swift in Sources */,
 				C0723B6B29BFA8FF00AA37B3 /* ViewController.swift in Sources */,
 				C0723B9E29C0B31900AA37B3 /* NewsTableViewCell.swift in Sources */,
@@ -376,7 +392,7 @@
 				INFOPLIST_FILE = NewsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = HomePage;
+				INFOPLIST_KEY_UIMainStoryboardFile = NewsStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -405,7 +421,7 @@
 				INFOPLIST_FILE = NewsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = HomePage;
+				INFOPLIST_KEY_UIMainStoryboardFile = NewsStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
